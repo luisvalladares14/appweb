@@ -1,5 +1,10 @@
 {% extends 'lay.html' %}
 
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('static', filename='css/prod.css')}}">
+{% endblock %}
+
 {% block content %}
 <div class="container-fluid">
 <div class="row">
@@ -12,10 +17,10 @@
 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
   <div class="card" style="width: 18rem;">
   <img class="card-img-top" src="{{url_for('static', filename='images/3.jpg')}}" alt="Card image cap">
-  <h1 class="card-title">EJEMPLO 1</h1>
+  <h1 class="card-title">Libros</h1>
   <div class="card-header">
     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseUno" aria-expanded="false" aria-controls="collapseOne">
-          Collapsible Group Item #1
+          Ver más...
     </button>
     <div id="collapseUno" class="collapse" aria-labelledby="headingOne">
       <div class="card-body">
@@ -26,18 +31,37 @@
 </div>
 </div>
 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <center>
-  <img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
-  <br>Tecnologia
-  </center>
-</div>
-<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <center>
-  <img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
-  <br>Musica
-  </center>
-</div>
-
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='images/3.jpg')}}" alt="Card image cap">
+  <h1 class="card-title">Novelas Ligeras</h1>
+  <div class="card-header">
+    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Ver más...
+        </button>
+  </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+  </div>
+  </div>
+  <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+    <div class="card" style="width: 18rem;">
+    <img class="card-img-top" src="{{url_for('static', filename='images/3.jpg')}}" alt="Card image cap">
+    <h1 class="card-title">Juegos</h1>
+    <div class="card-header">
+      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+            Ver más...
+          </button>
+    </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+          </div>
+        </div>
+    </div>
+    </div>
 </div>
 </div>
 {% endblock %}

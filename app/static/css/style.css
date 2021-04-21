@@ -1,6 +1,6 @@
 body {
   padding-bottom: 3rem;
-  background-color: #FFFFFF
+  background-color: #6A6E85
 }
 .carousel {
   margin-bottom: 4rem;
@@ -16,12 +16,10 @@ body {
   height: 32rem;
   background-color: #ffffff;
 }
-.carousel-item > img {
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  min-width: 80%;
   position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+  width: 100%;
 }
 h1{
   font-style: italic;
@@ -31,4 +29,7 @@ p{
   font-size: 23vh
   font-style: italic;
   color: #000000
+}
+.rounded-circle{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
