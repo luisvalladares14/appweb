@@ -1,16 +1,29 @@
-{% extends 'layout.html' %}
+{% extends 'lay.html' %}
 
-{% block container %}
-
+{% block content %}
+<div class="container-fluid">
+<div class="row">
 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" class="Español"><center>Español</center></div>
 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>English</center></div>
 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tristique vulputate. Aenean mollis at augue eget aliquam. Suspendisse vestibulum hendrerit odio non tristique. Vestibulum et ipsum elit. Sed quis mauris lacus. Sed elementum nisi nisl, et fringilla massa ultricies id. Aliquam malesuada at ligula a sollicitudin. Donec sollicitudin lectus vitae bibendum vehicula. Phasellus nec auctor purus, vel auctor diam. Duis tempor sem sodales laoreet elementum. Nullam et pellentesque risus. Cras sollicitudin ipsum et interdum suscipit. Proin rutrum, lacus posuere faucibus egestas, augue quam condimentum risus, id venenatis ipsum elit non ex.</center></div>
 <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tristique vulputate. Aenean mollis at augue eget aliquam. Suspendisse vestibulum hendrerit odio non tristique. Vestibulum et ipsum elit. Sed quis mauris lacus. Sed elementum nisi nisl, et fringilla massa ultricies id. Aliquam malesuada at ligula a sollicitudin. Donec sollicitudin lectus vitae bibendum vehicula. Phasellus nec auctor purus, vel auctor diam. Duis tempor sem sodales laoreet elementum. Nullam et pellentesque risus. Cras sollicitudin ipsum et interdum suscipit. Proin rutrum, lacus posuere faucibus egestas, augue quam condimentum risus, id venenatis ipsum elit non ex.</center></div>
-
+</div>
+<div class="row">
 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
-  <center><img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
-  <br>Comida
-  </center>
+  <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{url_for('static', filename='images/3.jpg')}}" alt="Card image cap">
+  <h1 class="card-title">EJEMPLO 1</h1>
+  <div class="card-header">
+    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseUno" aria-expanded="false" aria-controls="collapseOne">
+          Collapsible Group Item #1
+    </button>
+    <div id="collapseUno" class="collapse" aria-labelledby="headingOne">
+      <div class="card-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+  </div>
+  </div>
+</div>
 </div>
 <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
   <center>
@@ -25,4 +38,6 @@
   </center>
 </div>
 
+</div>
+</div>
 {% endblock %}
