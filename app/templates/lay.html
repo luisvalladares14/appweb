@@ -1,0 +1,42 @@
+{% extends 'bootstrap/base.html' %}
+
+
+{% block tittle %}
+  {{ title }}
+{% endblock %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    <a class="navbar-brand" href="{{url_for('page.index')}}"><img src="{{url_for('static', filename='images/3.jpg')}}" alt="" width="50" height="60">PORRO</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{url_for('page.index') }}">index</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"href="{{url_for('page.productos') }}">Products</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="{{url_for('page.login')}}">Login</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Otros</a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{url_for('page.hist')}}">Hisoria</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+</nav>
+</nav>
+{% endblock %}
+
+{% block content %}
+{% endblock %}

@@ -1,0 +1,24 @@
+body{
+  align-content: center;
+}
+
+.carousel-item {
+  height: 32rem;
+  background-color: #FFABFF;
+}
+.carousel-item > img {
+  padding: inherit;
+  position:fixed;
+  min-width: 80%;
+  height: 32rem;
+}
+.carousel-control-prev-icon{
+  color: #FFCABF;
+}
+h5{
+  background-color: #A3A3A3;
+}
+
+.w-75{
+  align-items: center;
+}

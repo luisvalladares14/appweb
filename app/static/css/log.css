@@ -1,0 +1,21 @@
+body {
+  padding-bottom: 3rem;
+  background-color: #CFD5F8;
+}
+
+.container_1{
+  font-style: italic;
+}
+.col-md-4{
+  border-radius: 3%;
+  border-bottom-color: #FF0000;
+  background-color: #FFFFF1;
+  image-orientation: center;
+}
+h3{
+  text-align: justify;
+  text-shadow: 30px;
+}
+.mb-4{
+  text-align: justify;
+}

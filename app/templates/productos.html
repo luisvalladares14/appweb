@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block container %}
+
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6" class="Español"><center>Español</center></div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>English</center></div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tristique vulputate. Aenean mollis at augue eget aliquam. Suspendisse vestibulum hendrerit odio non tristique. Vestibulum et ipsum elit. Sed quis mauris lacus. Sed elementum nisi nisl, et fringilla massa ultricies id. Aliquam malesuada at ligula a sollicitudin. Donec sollicitudin lectus vitae bibendum vehicula. Phasellus nec auctor purus, vel auctor diam. Duis tempor sem sodales laoreet elementum. Nullam et pellentesque risus. Cras sollicitudin ipsum et interdum suscipit. Proin rutrum, lacus posuere faucibus egestas, augue quam condimentum risus, id venenatis ipsum elit non ex.</center></div>
+<div class="col-sm-6 col-md-6 col-lg-6 col-xl-6"><center>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia tristique vulputate. Aenean mollis at augue eget aliquam. Suspendisse vestibulum hendrerit odio non tristique. Vestibulum et ipsum elit. Sed quis mauris lacus. Sed elementum nisi nisl, et fringilla massa ultricies id. Aliquam malesuada at ligula a sollicitudin. Donec sollicitudin lectus vitae bibendum vehicula. Phasellus nec auctor purus, vel auctor diam. Duis tempor sem sodales laoreet elementum. Nullam et pellentesque risus. Cras sollicitudin ipsum et interdum suscipit. Proin rutrum, lacus posuere faucibus egestas, augue quam condimentum risus, id venenatis ipsum elit non ex.</center></div>
+
+<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+  <center><img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
+  <br>Comida
+  </center>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+  <center>
+  <img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
+  <br>Tecnologia
+  </center>
+</div>
+<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+  <center>
+  <img src="{{url_for('static', filename='images/2.jpg')}}" alt="" width="80", height="100">
+  <br>Musica
+  </center>
+</div>
+
+{% endblock %}
