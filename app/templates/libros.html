@@ -1,0 +1,13 @@
+{% extends 'lay.html' %}
+
+{% block content %}
+<table>
+  {% for l in data.libros %}
+    <tr>
+      <td>{{ l[0] }}</td>
+      <td>{{ l[1] }}</td>
+      <td>{{ l[2] }}</td>
+    </tr>
+  {% endfor %}
+</table>
+{% endblock %}

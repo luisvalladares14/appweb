@@ -2,8 +2,8 @@ from flask import Blueprint
 from flask import render_template, request
 from .forms import LoginForm
 
-
 page = Blueprint('page', __name__)
+
 
 @page.app_errorhandler(404)
 def not_founded(error):
